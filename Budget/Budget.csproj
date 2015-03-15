@@ -88,7 +88,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BJ.Common\BJ.Common\BJ.Common.csproj">
+    <ProjectReference Include="..\BJ.Common\BJ.Common\BJ.Common.csproj">
       <Project>{bb48d726-fec3-49ab-8fc9-9f1286fa964e}</Project>
       <Name>BJ.Common</Name>
     </ProjectReference>

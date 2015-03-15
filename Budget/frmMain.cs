@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using BJ.Common;
 
 namespace Budget
 {
@@ -16,6 +17,10 @@ namespace Budget
         public frmMain()
         {
             InitializeComponent();
+            DateTimeMethods date = new DateTimeMethods();
+            string month = date.currentMonth();
+            string year = date.currentYear();
+            lblMain.Text = "Monthly Budget For " + month + ", " + year;
             getIncome();
             
         }

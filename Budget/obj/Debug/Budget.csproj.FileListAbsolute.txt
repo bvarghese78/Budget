@@ -35,3 +35,5 @@ C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.csprojResolve
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.frmMain.resources
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.Properties.Resources.resources
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.csproj.GenerateResource.Cache
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\BJ.Common.dll
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\BJ.Common.pdb
