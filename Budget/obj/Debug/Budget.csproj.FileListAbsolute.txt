@@ -29,3 +29,9 @@ C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\obj\Debug
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\Budget.exe.config
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.exe
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.pdb
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\Budget.exe
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\Budget.pdb
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.csprojResolveAssemblyReference.cache
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.frmMain.resources
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.Properties.Resources.resources
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.csproj.GenerateResource.Cache
