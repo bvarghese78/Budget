@@ -1,0 +1,28 @@
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\bin\Debug\Budget.exe.config
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\bin\Debug\Budget.exe
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\bin\Debug\Budget.pdb
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\obj\Debug\Budget.csprojResolveAssemblyReference.cache
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\obj\Debug\Budget.frmMain.resources
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\obj\Debug\Budget.Properties.Resources.resources
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\obj\Debug\Budget.csproj.GenerateResource.Cache
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\obj\Debug\Budget.exe
+C:\Users\BenjiJeen\AppData\Local\Temporary Projects\Budget\obj\Debug\Budget.pdb
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\bin\Debug\Budget.exe.config
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\obj\Debug\Budget.exe
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\obj\Debug\Budget.pdb
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\bin\Debug\Budget.exe
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\bin\Debug\Budget.pdb
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\obj\Debug\Budget.csprojResolveAssemblyReference.cache
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\obj\Debug\Budget.frmMain.resources
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\obj\Debug\Budget.Properties.Resources.resources
+C:\Users\BenjiJeen\Documents\Visual Studio 2012\Projects\Budget\Budget\obj\Debug\Budget.csproj.GenerateResource.Cache
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\bin\Debug\Budget.exe.config
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\bin\Debug\Budget.exe
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\bin\Debug\Budget.pdb
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\bin\Debug\BJ.Common.dll
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\bin\Debug\BJ.Common.pdb
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\obj\Debug\Budget.csprojResolveAssemblyReference.cache
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\obj\Debug\Budget.Properties.Resources.resources
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\obj\Debug\Budget.csproj.GenerateResource.Cache
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\obj\Debug\Budget.exe
+C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\Budget\Budget\obj\Debug\Budget.pdb
