@@ -27,7 +27,7 @@ namespace Budget
             {
                 ret = ret + item.netPay;
             }
-
+            
             return ret;
         }
     }
