@@ -25,5 +25,10 @@ namespace Budget
 
             txtIncomeMain.Text = Convert.ToString(business.getIncome(monthNum, Convert.ToInt32(year)));
         }
+
+        private void txtEatingOut_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
