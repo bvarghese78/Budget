@@ -30,5 +30,24 @@ namespace Budget
             reader.Close();
             return ret;
         }
+
+        public List<Income> GetIncome(DateTime startDate, DateTime endDate)
+        {
+            List<Income> ret = new List<Income>();
+
+            mysql.Open();
+            var command = mysql.CreateCommand();
+            command.CommandText = "select * from income where paydate between @b AND @e";
+            command.Parameters.AddWithValue("@b", startDate);
+            command.Parameters.AddWithValue("@e", endDate);
+
+            var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                ret.Add(new Income(reader));
+            }
+
+            return ret;
+        }
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="CreditCards.cs" />
     <Compile Include="Data.cs" />

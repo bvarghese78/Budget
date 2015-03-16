@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 using BJ.Common;
 
 namespace Budget
@@ -17,28 +16,14 @@ namespace Budget
         public frmMain()
         {
             InitializeComponent();
+            BusinessLayer business = new BusinessLayer();
             DateTimeMethods date = new DateTimeMethods();
             string month = date.currentMonth();
             string year = date.currentYear();
+            int monthNum = date.currentMonthInt();
             lblMain.Text = "Monthly Budget For " + month + ", " + year;
-            getIncome();
-            
-        }
 
-        private void getIncome()
-        {
-            List<Income> ret = new List<Income>();
-            MySqlConnection mysql = Helper.NewMySqlConnection();
-            mysql.Open();
-
-            var command = mysql.CreateCommand();
-            command.CommandText = "select * from income where paydate between '2015-03-01' AND '2015-03-31'";
-
-            var reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                ret.Add(new Income(reader));
-            }
+            txtIncomeMain.Text = Convert.ToString(business.getIncome(monthNum, Convert.ToInt32(year)));
         }
     }
 }

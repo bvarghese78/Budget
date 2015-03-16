@@ -31,7 +31,7 @@ namespace BJ.Common
         {
             return DateTime.Now.ToShortDateString();
         }
-
+         
         /* Return the full date time including date
          * Format: Saturday, December 20, 2014 3:49:12 PM
          */
@@ -70,6 +70,15 @@ namespace BJ.Common
         {
             DateTime date = DateTime.Now;
             return date.Month;
+        }
+
+        /*
+         * Return date only
+         * Format: MM/DD/YYYY
+         */
+        public string ConvertToShortDateString(DateTime date)
+        {
+            return date.ToShortDateString();
         }
     }
 }
