@@ -31,7 +31,7 @@ namespace Budget
             return ret;
         }
 
-        public List<Income> GetIncome(DateTime startDate, DateTime endDate)
+        public List<Income> GetIncome(string startDate, string endDate)
         {
             List<Income> ret = new List<Income>();
 

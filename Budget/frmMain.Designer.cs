@@ -257,6 +257,7 @@
             this.txtIncomeMain.Name = "txtIncomeMain";
             this.txtIncomeMain.Size = new System.Drawing.Size(100, 20);
             this.txtIncomeMain.TabIndex = 4;
+            this.txtIncomeMain.Click += new System.EventHandler(this.txtIncomeMain_Click);
             // 
             // txtExpenseMain
             // 

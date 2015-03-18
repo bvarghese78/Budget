@@ -21,18 +21,17 @@ namespace Budget
             string month = date.currentMonth();
             string year = date.currentYear();
             int monthNum = date.currentMonthInt();
-            lblMain.Text = "Monthly Budget For " + month + ", " + year;
+            string startDate = Convert.ToInt32(year) + "-" + monthNum + "-" + "1";
+            string endDate = Convert.ToInt32(year) + "-" + monthNum + "-" + "31";
 
-            DataTable dt = new DataTable();
-            txtIncomeMain.Text = Convert.ToString(business.getIncome(monthNum, Convert.ToInt32(year), dt));
-            dgvMain.DataSource = dt;
+            lblMain.Text = "Monthly Budget For " + month + ", " + year;
 
             cmbMonth.SelectedIndex = date.currentMonthInt() - 1;
             cmbYear.SelectedItem = date.currentYear();
-        }
 
-        private void txtEatingOut_MouseClick(object sender, MouseEventArgs e)
-        {
+            DataTable dt = new DataTable();
+            txtIncomeMain.Text = Convert.ToString(business.getIncome(startDate, endDate, dt));
+            dgvMain.DataSource = dt;
 
         }
 
@@ -61,6 +60,36 @@ namespace Budget
                 cmbYearRange.Enabled = false;
                 cmbYearRange.SelectedIndex = 0;
             }
+        }
+
+        private void txtEatingOut_MouseClick(object sender, MouseEventArgs e)
+        {
+            BusinessLayer business = new BusinessLayer();
+            string startDate = cmbYear.SelectedItem + "-" + (cmbMonth.SelectedIndex + 1) + "-" + "01";
+            DataTable dt = new DataTable();
+            string endDate;
+            if (chkRange.Checked == false)
+                endDate = cmbYear.SelectedItem + "-" + (cmbMonth.SelectedIndex + 1) + "-" + "31";
+            else
+                endDate = cmbYearRange.SelectedItem + "-" + (cmbMonthRange.SelectedIndex + 1) + "-" + "31";
+
+            txtEatingOut.Text = Convert.ToString(business.getEatingOut(startDate, endDate, dt));
+            dgvMain.DataSource = dt;
+        }
+
+        private void txtIncomeMain_Click(object sender, EventArgs e)
+        {
+            BusinessLayer business = new BusinessLayer();
+            string startDate = cmbYear.SelectedItem + "-" + (cmbMonth.SelectedIndex + 1) + "-" + "01";
+            DataTable dt = new DataTable();
+            string endDate;
+            if (chkRange.Checked == false)
+                endDate = cmbYear.SelectedItem + "-" + (cmbMonth.SelectedIndex + 1) + "-" + "31";
+            else
+                endDate = cmbYearRange.SelectedItem + "-" + (cmbMonthRange.SelectedIndex + 1) + "-" + "31";
+
+            txtIncomeMain.Text = Convert.ToString(business.getIncome(startDate, endDate, dt));
+            dgvMain.DataSource = dt;
         }
     }
 }
