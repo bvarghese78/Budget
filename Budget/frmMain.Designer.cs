@@ -50,8 +50,8 @@
             this.txtIncomeMain = new System.Windows.Forms.TextBox();
             this.txtExpenseMain = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtTime = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,15 +60,15 @@
             this.eatingOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.haircutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cmbMonth = new System.Windows.Forms.ComboBox();
-            this.cmbYear = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.chkRange = new System.Windows.Forms.CheckBox();
             this.cmbYearRange = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cmbMonthRange = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.chkRange = new System.Windows.Forms.CheckBox();
+            this.cmbYear = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbMonth = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -216,6 +216,7 @@
             // 
             // dgvMain
             // 
+            this.dgvMain.BackgroundColor = System.Drawing.Color.Khaki;
             this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMain.Location = new System.Drawing.Point(3, 3);
             this.dgvMain.Name = "dgvMain";
@@ -273,6 +274,14 @@
             this.panel2.Size = new System.Drawing.Size(362, 121);
             this.panel2.TabIndex = 6;
             // 
+            // txtTime
+            // 
+            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.Location = new System.Drawing.Point(68, 7);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(291, 26);
+            this.txtTime.TabIndex = 6;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -281,14 +290,6 @@
             this.label9.Size = new System.Drawing.Size(43, 13);
             this.label9.TabIndex = 5;
             this.label9.Text = "Today: ";
-            // 
-            // txtTime
-            // 
-            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime.Location = new System.Drawing.Point(68, 7);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(291, 26);
-            this.txtTime.TabIndex = 6;
             // 
             // timer1
             // 
@@ -318,7 +319,7 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -334,13 +335,13 @@
             // eatingOutToolStripMenuItem
             // 
             this.eatingOutToolStripMenuItem.Name = "eatingOutToolStripMenuItem";
-            this.eatingOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eatingOutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.eatingOutToolStripMenuItem.Text = "Eating Out";
             // 
             // haircutToolStripMenuItem
             // 
             this.haircutToolStripMenuItem.Name = "haircutToolStripMenuItem";
-            this.haircutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.haircutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.haircutToolStripMenuItem.Text = "Haircut";
             // 
             // panel3
@@ -358,72 +359,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(325, 92);
             this.panel3.TabIndex = 8;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Month:";
-            // 
-            // cmbMonth
-            // 
-            this.cmbMonth.FormattingEnabled = true;
-            this.cmbMonth.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.cmbMonth.Location = new System.Drawing.Point(60, 5);
-            this.cmbMonth.Name = "cmbMonth";
-            this.cmbMonth.Size = new System.Drawing.Size(105, 21);
-            this.cmbMonth.TabIndex = 6;
-            // 
-            // cmbYear
-            // 
-            this.cmbYear.FormattingEnabled = true;
-            this.cmbYear.Items.AddRange(new object[] {
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018",
-            "2019",
-            "2020"});
-            this.cmbYear.Location = new System.Drawing.Point(217, 5);
-            this.cmbYear.Name = "cmbYear";
-            this.cmbYear.Size = new System.Drawing.Size(105, 21);
-            this.cmbYear.TabIndex = 8;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(179, 9);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 13);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Year:";
-            // 
-            // chkRange
-            // 
-            this.chkRange.AutoSize = true;
-            this.chkRange.Location = new System.Drawing.Point(17, 38);
-            this.chkRange.Name = "chkRange";
-            this.chkRange.Size = new System.Drawing.Size(180, 17);
-            this.chkRange.TabIndex = 9;
-            this.chkRange.Text = "Check to select a range of dates";
-            this.chkRange.UseVisualStyleBackColor = true;
-            this.chkRange.CheckedChanged += new System.EventHandler(this.chkRange_CheckedChanged);
             // 
             // cmbYearRange
             // 
@@ -483,6 +418,72 @@
             this.label13.Size = new System.Drawing.Size(40, 13);
             this.label13.TabIndex = 10;
             this.label13.Text = "Month:";
+            // 
+            // chkRange
+            // 
+            this.chkRange.AutoSize = true;
+            this.chkRange.Location = new System.Drawing.Point(17, 38);
+            this.chkRange.Name = "chkRange";
+            this.chkRange.Size = new System.Drawing.Size(180, 17);
+            this.chkRange.TabIndex = 9;
+            this.chkRange.Text = "Check to select a range of dates";
+            this.chkRange.UseVisualStyleBackColor = true;
+            this.chkRange.CheckedChanged += new System.EventHandler(this.chkRange_CheckedChanged);
+            // 
+            // cmbYear
+            // 
+            this.cmbYear.FormattingEnabled = true;
+            this.cmbYear.Items.AddRange(new object[] {
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020"});
+            this.cmbYear.Location = new System.Drawing.Point(217, 5);
+            this.cmbYear.Name = "cmbYear";
+            this.cmbYear.Size = new System.Drawing.Size(105, 21);
+            this.cmbYear.TabIndex = 8;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(179, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 13);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Year:";
+            // 
+            // cmbMonth
+            // 
+            this.cmbMonth.FormattingEnabled = true;
+            this.cmbMonth.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cmbMonth.Location = new System.Drawing.Point(60, 5);
+            this.cmbMonth.Name = "cmbMonth";
+            this.cmbMonth.Size = new System.Drawing.Size(105, 21);
+            this.cmbMonth.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(14, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Month:";
             // 
             // frmMain
             // 

@@ -23,7 +23,9 @@ namespace Budget
             int monthNum = date.currentMonthInt();
             lblMain.Text = "Monthly Budget For " + month + ", " + year;
 
-            txtIncomeMain.Text = Convert.ToString(business.getIncome(monthNum, Convert.ToInt32(year)));
+            DataTable dt = new DataTable();
+            txtIncomeMain.Text = Convert.ToString(business.getIncome(monthNum, Convert.ToInt32(year), dt));
+            dgvMain.DataSource = dt;
 
             cmbMonth.SelectedIndex = date.currentMonthInt() - 1;
             cmbYear.SelectedItem = date.currentYear();
