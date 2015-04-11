@@ -91,5 +91,11 @@ namespace Budget
             txtIncomeMain.Text = Convert.ToString(business.getIncome(startDate, endDate, dt));
             dgvMain.DataSource = dt;
         }
+
+        private void groceryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGrocery grocery = new frmGrocery();
+            grocery.Show();
+        }
     }
 }

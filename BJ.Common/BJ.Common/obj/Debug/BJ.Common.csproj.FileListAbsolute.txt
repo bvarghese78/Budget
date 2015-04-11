@@ -4,5 +4,6 @@ C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\BJ.Common\BJ.Common\obj
 C:\Users\BenjiJeen\Documents\Visual Studio 2013\Projects\BJ.Common\BJ.Common\obj\Debug\BJ.Common.pdb
 C:\Users\BenjiJeen\Documents\GitHub\Budget\BJ.Common\BJ.Common\bin\Debug\BJ.Common.dll
 C:\Users\BenjiJeen\Documents\GitHub\Budget\BJ.Common\BJ.Common\bin\Debug\BJ.Common.pdb
+C:\Users\BenjiJeen\Documents\GitHub\Budget\BJ.Common\BJ.Common\obj\Debug\BJ.Common.csprojResolveAssemblyReference.cache
 C:\Users\BenjiJeen\Documents\GitHub\Budget\BJ.Common\BJ.Common\obj\Debug\BJ.Common.dll
 C:\Users\BenjiJeen\Documents\GitHub\Budget\BJ.Common\BJ.Common\obj\Debug\BJ.Common.pdb

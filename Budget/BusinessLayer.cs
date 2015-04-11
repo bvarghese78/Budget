@@ -66,5 +66,15 @@ namespace Budget
 
             return ret;
         }
+
+        public List<GroceryStoreInfo> getGroceryStores()
+        {
+            List<GroceryStoreInfo> ret = new List<GroceryStoreInfo>();
+
+            Data data = new Data();
+            ret = data.GetGroceryStores();
+
+            return ret;
+        }
     }
 }

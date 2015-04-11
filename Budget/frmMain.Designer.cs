@@ -59,6 +59,7 @@
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eatingOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.haircutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groceryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cmbYearRange = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -277,10 +278,10 @@
             // 
             // txtTime
             // 
-            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTime.Location = new System.Drawing.Point(68, 7);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(291, 26);
+            this.txtTime.Size = new System.Drawing.Size(291, 22);
             this.txtTime.TabIndex = 6;
             // 
             // label9
@@ -328,7 +329,8 @@
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eatingOutToolStripMenuItem,
-            this.haircutToolStripMenuItem});
+            this.haircutToolStripMenuItem,
+            this.groceryToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -336,14 +338,21 @@
             // eatingOutToolStripMenuItem
             // 
             this.eatingOutToolStripMenuItem.Name = "eatingOutToolStripMenuItem";
-            this.eatingOutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.eatingOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eatingOutToolStripMenuItem.Text = "Eating Out";
             // 
             // haircutToolStripMenuItem
             // 
             this.haircutToolStripMenuItem.Name = "haircutToolStripMenuItem";
-            this.haircutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.haircutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.haircutToolStripMenuItem.Text = "Haircut";
+            // 
+            // groceryToolStripMenuItem
+            // 
+            this.groceryToolStripMenuItem.Name = "groceryToolStripMenuItem";
+            this.groceryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.groceryToolStripMenuItem.Text = "Grocery";
+            this.groceryToolStripMenuItem.Click += new System.EventHandler(this.groceryToolStripMenuItem_Click);
             // 
             // panel3
             // 
@@ -564,5 +573,6 @@
         private System.Windows.Forms.ComboBox cmbMonthRange;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox chkRange;
+        private System.Windows.Forms.ToolStripMenuItem groceryToolStripMenuItem;
     }
 }

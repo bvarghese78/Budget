@@ -51,17 +51,28 @@
     <Compile Include="CreditCards.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="EatingOut.cs" />
+    <Compile Include="frmGrocery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrocery.Designer.cs">
+      <DependentUpon>frmGrocery.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GroceryStoreInfo.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Income.cs" />
+    <Compile Include="InsertGroceries.cs" />
     <Compile Include="Pepe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGrocery.resx">
+      <DependentUpon>frmGrocery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

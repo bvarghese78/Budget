@@ -49,5 +49,22 @@ namespace Budget
 
             return ret;
         }
+
+        public List<GroceryStoreInfo> GetGroceryStores()
+        {
+            List<GroceryStoreInfo> ret = new List<GroceryStoreInfo>();
+
+            mysql.Open();
+            var command = mysql.CreateCommand();
+            command.CommandText = "select * from grocery";
+            
+            var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                ret.Add(new GroceryStoreInfo(reader));
+            }
+           
+            return ret;
+        }
     }
 }

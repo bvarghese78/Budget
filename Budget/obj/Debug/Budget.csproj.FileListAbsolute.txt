@@ -32,6 +32,7 @@ C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\Budget.pdb
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\BJ.Common.dll
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\bin\Debug\BJ.Common.pdb
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.csprojResolveAssemblyReference.cache
+C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.frmGrocery.resources
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.frmMain.resources
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.Properties.Resources.resources
 C:\Users\BenjiJeen\Documents\GitHub\Budget\Budget\obj\Debug\Budget.csproj.GenerateResource.Cache
