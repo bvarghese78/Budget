@@ -46,21 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="CreditCards.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="EatingOut.cs" />
+    <Compile Include="frmGrocery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrocery.Designer.cs">
+      <DependentUpon>frmGrocery.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GroceryStoreInfo.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Income.cs" />
+    <Compile Include="InsertGroceries.cs" />
     <Compile Include="Pepe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGrocery.resx">
+      <DependentUpon>frmGrocery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -85,7 +100,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BJ.Common\BJ.Common\BJ.Common.csproj">
+    <ProjectReference Include="..\BJ.Common\BJ.Common\BJ.Common.csproj">
       <Project>{bb48d726-fec3-49ab-8fc9-9f1286fa964e}</Project>
       <Name>BJ.Common</Name>
     </ProjectReference>
