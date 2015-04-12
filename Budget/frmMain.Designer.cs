@@ -219,7 +219,7 @@
             // 
             this.dgvMain.BackgroundColor = System.Drawing.Color.Khaki;
             this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMain.Location = new System.Drawing.Point(3, 3);
+            this.dgvMain.Location = new System.Drawing.Point(6, 0);
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.Size = new System.Drawing.Size(976, 423);
             this.dgvMain.TabIndex = 0;
@@ -338,19 +338,19 @@
             // eatingOutToolStripMenuItem
             // 
             this.eatingOutToolStripMenuItem.Name = "eatingOutToolStripMenuItem";
-            this.eatingOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eatingOutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.eatingOutToolStripMenuItem.Text = "Eating Out";
             // 
             // haircutToolStripMenuItem
             // 
             this.haircutToolStripMenuItem.Name = "haircutToolStripMenuItem";
-            this.haircutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.haircutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.haircutToolStripMenuItem.Text = "Haircut";
             // 
             // groceryToolStripMenuItem
             // 
             this.groceryToolStripMenuItem.Name = "groceryToolStripMenuItem";
-            this.groceryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.groceryToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.groceryToolStripMenuItem.Text = "Grocery";
             this.groceryToolStripMenuItem.Click += new System.EventHandler(this.groceryToolStripMenuItem_Click);
             // 
