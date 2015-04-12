@@ -189,7 +189,7 @@ namespace Budget
                 string category = txtCategory.Text;
                 string description = txtDesc.Text;
                 var perLb = txtPerLB.Text;
-                var totalLb = txtTotal.Text;
+                var totalLb = txtTotalLB.Text;
                 var sale = txtSale.Text;
                 var original = txtOriginal.Text;
                 var total = txtTotalAmount.Text;
@@ -296,12 +296,25 @@ namespace Budget
                 MessageBox.Show("No Data Available to Save.", "Invalid Data");
             else
             {
-                BusinessLayer business = new BusinessLayer();
-                string store = Convert.ToString(cmbStore.SelectedItem);
-                DateTime date = Convert.ToDateTime(dtpDate.Text);
-                business.InsertGroceries(newGroceryList, date, store);
+                UpdateGrocery();
             }
+        }
 
+        private void UpdateGrocery()
+        {
+            BusinessLayer business = new BusinessLayer();
+            string store = Convert.ToString(cmbStore.SelectedItem);
+            DateTime date = Convert.ToDateTime(dtpDate.Text);
+            double subtotal;
+            double savings;
+            double tax;
+            double total;
+
+            double.TryParse(txtSubtotal.Text, out subtotal);
+            double.TryParse(txtSavings.Text, out savings);
+            double.TryParse(txtTax.Text, out tax);
+            double.TryParse(txtTotal.Text, out total);
+            business.InsertGroceries(newGroceryList, date, store, subtotal, savings, tax, total);
         }
     }
 }

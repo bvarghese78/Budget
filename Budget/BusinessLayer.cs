@@ -77,14 +77,18 @@ namespace Budget
             return ret;
         }
 
-        public async Task InsertGroceries(List<InsertGroceries> list, DateTime shopDate, string storeName)
+        public void InsertGroceries(List<InsertGroceries> list, DateTime shopDate, string storeName, double subtotal, double savings, double tax, double total)
         {
             Data data = new Data();
 
+            int previousTrip = data.GetLastGroceryTripID();
+            int storeID = data.GetStoreID(storeName);
+
             foreach (var item in list)
-            {
-               await data.InsertGroceries(item.Category, item.Description, item.PerLB, item.TotalLB, item.SalePrice, item.OriginalPrice, item.TotalAmount, shopDate, storeName);
-            }    
+               data.InsertGroceries(item.Category, item.Description, item.PerLB, item.TotalLB, item.SalePrice, item.OriginalPrice, item.TotalAmount, shopDate, storeID, previousTrip + 1);
+
+            // Insert Total Amount
+            data.InsertGroceryTotal(previousTrip + 1, subtotal, savings, tax, total);
         }
     }
 }
