@@ -66,5 +66,80 @@ namespace Budget
            
             return ret;
         }
+
+        public void InsertGroceries(string cat, string desc, double? perPound, double? totalPounds, double? salePrice, double originalPrice, double totalPrice, DateTime shopDate, int storeid, int tripID)
+        {
+            mysql.Open();
+
+            var command = mysql.CreateCommand();
+            command.CommandText = "insert into monthly_grocery_info (groceryid, shoppingdate, grocerytripid, category, itemdescription, perpoundamount, totalpounds, saleprice, originalprice, totalamount) values (@g, @sd, @gt, @c, @id, @ppa, @tp, @sp, @op, @ta)";
+            command.Parameters.AddWithValue("@g", storeid);
+            command.Parameters.AddWithValue("@sd", shopDate);
+            command.Parameters.AddWithValue("@gt", tripID);
+            command.Parameters.AddWithValue("@c", cat);
+            command.Parameters.AddWithValue("@id", desc);
+            command.Parameters.AddWithValue("@ppa", perPound);
+            command.Parameters.AddWithValue("@tp", totalPounds);
+            command.Parameters.AddWithValue("@sp", salePrice);
+            command.Parameters.AddWithValue("@op", originalPrice);
+            command.Parameters.AddWithValue("@ta", totalPrice);
+
+            command.ExecuteNonQuery();
+
+            mysql.Close();
+        }
+
+        public void InsertGroceryTotal(int tripID, double subtotal, double savings, double tax, double total)
+        {
+            mysql.Open();
+
+            var command = mysql.CreateCommand();
+            command.CommandText = "insert into monthly_grocery_total (grocerytripid, subtotal, savings, tax, total) values (@gti, @st, @s, @tx, @ttl)";
+            command.Parameters.AddWithValue("@gti", tripID);
+            command.Parameters.AddWithValue("@st", subtotal);
+            command.Parameters.AddWithValue("@s", savings);
+            command.Parameters.AddWithValue("@tx", tax);
+            command.Parameters.AddWithValue("@ttl", total);
+
+            command.ExecuteNonQuery();
+            
+            mysql.Close();
+        }
+
+        // Gets the last 'grocerytripid' from monthly_grocery_info table
+        public int GetLastGroceryTripID()
+        {
+            int ret;
+            mysql.Open();
+            var command = mysql.CreateCommand();
+            command.CommandText = "select MAX(grocerytripid) as grocerytripid from monthly_grocery_info";
+            
+            var reader = command.ExecuteReader();
+            reader.Read();
+
+            ret = Convert.ToInt32(reader[0]);
+            
+            mysql.Close();
+
+            return ret; 
+        }
+
+        // Gets the store id for grocery stores
+        public int GetStoreID(string store)
+        {
+            int ret;
+
+            mysql.Open();
+            var command = mysql.CreateCommand();
+            command.CommandText = "select id from grocery where storename=@s";
+            command.Parameters.AddWithValue("@s", store);
+
+            var reader = command.ExecuteReader();
+            reader.Read();
+            ret = Convert.ToInt32(reader[0]);
+
+            mysql.Close();
+            return ret;
+        }
     }
 }
