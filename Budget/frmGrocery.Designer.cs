@@ -38,7 +38,9 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.btnStoreLock = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnData = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvGrocery = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.lblTotalAmount = new System.Windows.Forms.Label();
@@ -54,7 +56,6 @@
             this.lblDesc = new System.Windows.Forms.Label();
             this.txtCategory = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.dgvGrocery = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -76,7 +77,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(371, 9);
+            this.label1.Location = new System.Drawing.Point(413, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 30);
             this.label1.TabIndex = 0;
@@ -86,7 +87,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(310, 54);
+            this.label2.Location = new System.Drawing.Point(292, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 15);
             this.label2.TabIndex = 1;
@@ -97,7 +98,7 @@
             this.lblCity.AutoSize = true;
             this.lblCity.Enabled = false;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCity.Location = new System.Drawing.Point(229, 96);
+            this.lblCity.Location = new System.Drawing.Point(527, 55);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(29, 15);
             this.lblCity.TabIndex = 2;
@@ -109,7 +110,7 @@
             this.lblState.AutoSize = true;
             this.lblState.Enabled = false;
             this.lblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblState.Location = new System.Drawing.Point(446, 97);
+            this.lblState.Location = new System.Drawing.Point(744, 56);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(38, 15);
             this.lblState.TabIndex = 3;
@@ -119,7 +120,7 @@
             // cmbStore
             // 
             this.cmbStore.FormattingEnabled = true;
-            this.cmbStore.Location = new System.Drawing.Point(356, 54);
+            this.cmbStore.Location = new System.Drawing.Point(338, 54);
             this.cmbStore.Name = "cmbStore";
             this.cmbStore.Size = new System.Drawing.Size(164, 21);
             this.cmbStore.TabIndex = 4;
@@ -127,7 +128,7 @@
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(265, 96);
+            this.txtCity.Location = new System.Drawing.Point(563, 55);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(164, 20);
             this.txtCity.TabIndex = 5;
@@ -135,9 +136,9 @@
             // 
             // txtState
             // 
-            this.txtState.Location = new System.Drawing.Point(491, 97);
+            this.txtState.Location = new System.Drawing.Point(789, 56);
             this.txtState.Name = "txtState";
-            this.txtState.Size = new System.Drawing.Size(132, 20);
+            this.txtState.Size = new System.Drawing.Size(145, 20);
             this.txtState.TabIndex = 6;
             this.txtState.Visible = false;
             // 
@@ -146,7 +147,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.Enabled = false;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(35, 55);
+            this.lblDate.Location = new System.Drawing.Point(10, 55);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(36, 15);
             this.lblDate.TabIndex = 7;
@@ -155,9 +156,9 @@
             // 
             // btnStoreLock
             // 
-            this.btnStoreLock.Location = new System.Drawing.Point(569, 53);
+            this.btnStoreLock.Location = new System.Drawing.Point(431, 91);
             this.btnStoreLock.Name = "btnStoreLock";
-            this.btnStoreLock.Size = new System.Drawing.Size(75, 23);
+            this.btnStoreLock.Size = new System.Drawing.Size(108, 27);
             this.btnStoreLock.TabIndex = 9;
             this.btnStoreLock.Text = "LOCK";
             this.btnStoreLock.UseVisualStyleBackColor = true;
@@ -166,18 +167,31 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnData);
             this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 146);
+            this.groupBox1.Location = new System.Drawing.Point(13, 129);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(921, 324);
+            this.groupBox1.Size = new System.Drawing.Size(921, 341);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "New Entry";
             this.groupBox1.Visible = false;
             // 
+            // btnData
+            // 
+            this.btnData.Location = new System.Drawing.Point(418, 308);
+            this.btnData.Name = "btnData";
+            this.btnData.Size = new System.Drawing.Size(108, 27);
+            this.btnData.TabIndex = 25;
+            this.btnData.Text = "INSERT";
+            this.btnData.UseVisualStyleBackColor = true;
+            this.btnData.Visible = false;
+            this.btnData.Click += new System.EventHandler(this.btnData_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Khaki;
+            this.panel1.Controls.Add(this.dgvGrocery);
             this.panel1.Controls.Add(this.btnInsert);
             this.panel1.Controls.Add(this.txtTotalAmount);
             this.panel1.Controls.Add(this.lblTotalAmount);
@@ -193,26 +207,35 @@
             this.panel1.Controls.Add(this.lblDesc);
             this.panel1.Controls.Add(this.txtCategory);
             this.panel1.Controls.Add(this.lblCategory);
-            this.panel1.Controls.Add(this.dgvGrocery);
             this.panel1.Location = new System.Drawing.Point(6, 19);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(909, 299);
+            this.panel1.Size = new System.Drawing.Size(909, 288);
             this.panel1.TabIndex = 0;
             this.panel1.Visible = false;
             // 
+            // dgvGrocery
+            // 
+            this.dgvGrocery.BackgroundColor = System.Drawing.Color.Khaki;
+            this.dgvGrocery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrocery.Location = new System.Drawing.Point(6, 99);
+            this.dgvGrocery.Name = "dgvGrocery";
+            this.dgvGrocery.Size = new System.Drawing.Size(900, 184);
+            this.dgvGrocery.TabIndex = 25;
+            // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(472, 71);
+            this.btnInsert.Location = new System.Drawing.Point(491, 71);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(108, 27);
             this.btnInsert.TabIndex = 24;
             this.btnInsert.Text = "INSERT";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Visible = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // txtTotalAmount
             // 
-            this.txtTotalAmount.Location = new System.Drawing.Point(286, 72);
+            this.txtTotalAmount.Location = new System.Drawing.Point(305, 72);
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.Size = new System.Drawing.Size(145, 20);
             this.txtTotalAmount.TabIndex = 23;
@@ -223,7 +246,7 @@
             this.lblTotalAmount.AutoSize = true;
             this.lblTotalAmount.Enabled = false;
             this.lblTotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAmount.Location = new System.Drawing.Point(243, 72);
+            this.lblTotalAmount.Location = new System.Drawing.Point(262, 72);
             this.lblTotalAmount.Name = "lblTotalAmount";
             this.lblTotalAmount.Size = new System.Drawing.Size(37, 15);
             this.lblTotalAmount.TabIndex = 22;
@@ -272,6 +295,7 @@
             // 
             // txtTotalLB
             // 
+            this.txtTotalLB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             this.txtTotalLB.Location = new System.Drawing.Point(410, 43);
             this.txtTotalLB.Name = "txtTotalLB";
             this.txtTotalLB.Size = new System.Drawing.Size(145, 20);
@@ -350,16 +374,6 @@
             this.lblCategory.Text = "Category:";
             this.lblCategory.Visible = false;
             // 
-            // dgvGrocery
-            // 
-            this.dgvGrocery.BackgroundColor = System.Drawing.Color.Khaki;
-            this.dgvGrocery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGrocery.Location = new System.Drawing.Point(3, 104);
-            this.dgvGrocery.Name = "dgvGrocery";
-            this.dgvGrocery.Size = new System.Drawing.Size(903, 192);
-            this.dgvGrocery.TabIndex = 0;
-            this.dgvGrocery.Visible = false;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnUpdate);
@@ -371,7 +385,7 @@
             this.groupBox2.Controls.Add(this.lblSavings);
             this.groupBox2.Controls.Add(this.txtSubtotal);
             this.groupBox2.Controls.Add(this.lblSubtotal);
-            this.groupBox2.Location = new System.Drawing.Point(19, 491);
+            this.groupBox2.Location = new System.Drawing.Point(13, 491);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(921, 46);
             this.groupBox2.TabIndex = 11;
@@ -381,13 +395,14 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(727, 9);
+            this.btnUpdate.Location = new System.Drawing.Point(727, 13);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(108, 32);
+            this.btnUpdate.Size = new System.Drawing.Size(108, 27);
             this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Visible = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtTotal
             // 
@@ -471,7 +486,7 @@
             // 
             // dtpDate
             // 
-            this.dtpDate.Location = new System.Drawing.Point(77, 55);
+            this.dtpDate.Location = new System.Drawing.Point(52, 55);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(200, 20);
             this.dtpDate.TabIndex = 12;
@@ -522,7 +537,6 @@
         private System.Windows.Forms.Button btnStoreLock;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvGrocery;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtTotal;
@@ -549,5 +563,7 @@
         private System.Windows.Forms.TextBox txtCategory;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.Button btnData;
+        private System.Windows.Forms.DataGridView dgvGrocery;
     }
 }

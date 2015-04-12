@@ -76,5 +76,15 @@ namespace Budget
 
             return ret;
         }
+
+        public async Task InsertGroceries(List<InsertGroceries> list, DateTime shopDate, string storeName)
+        {
+            Data data = new Data();
+
+            foreach (var item in list)
+            {
+               await data.InsertGroceries(item.Category, item.Description, item.PerLB, item.TotalLB, item.SalePrice, item.OriginalPrice, item.TotalAmount, shopDate, storeName);
+            }    
+        }
     }
 }

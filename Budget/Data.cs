@@ -66,5 +66,13 @@ namespace Budget
            
             return ret;
         }
+
+        public async Task InsertGroceries(string cat, string desc, double? perPound, double? totalPounds, double? salePrice, double originalPrice, double totalPrice, DateTime shopDate, string store)
+        {
+            await mysql.OpenAsync();
+
+            var command = mysql.CreateCommand();
+            //command.CommandText = "";
+        }
     }
 }
