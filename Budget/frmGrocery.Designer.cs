@@ -411,6 +411,7 @@
             this.txtTotal.Size = new System.Drawing.Size(98, 20);
             this.txtTotal.TabIndex = 16;
             this.txtTotal.Visible = false;
+            this.txtTotal.Enter += new System.EventHandler(this.txtTotal_Enter);
             // 
             // lblTotal
             // 

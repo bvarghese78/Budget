@@ -260,6 +260,8 @@ namespace Budget
 
         private void btnData_Click(object sender, EventArgs e)
         {
+            double subtotal = 0.0;
+
             if (btnData.Text == "INSERT")
             {
                 enableFields(Display.subTotal);
@@ -287,6 +289,11 @@ namespace Budget
 
                 btnInsert.Enabled = true;
                 btnData.Text = "INSERT";
+
+                foreach(var item in newGroceryList)
+                    subtotal =  subtotal + item.TotalAmount;
+
+                txtSubtotal.Text = Convert.ToString(subtotal);
             }
         }
 
@@ -315,6 +322,41 @@ namespace Budget
             double.TryParse(txtTax.Text, out tax);
             double.TryParse(txtTotal.Text, out total);
             business.InsertGroceries(newGroceryList, date, store, subtotal, savings, tax, total);
+            clear();
+            MessageBox.Show("Grocery lists added to Database.", "Grocery Saved");
+
+        }
+
+        private void clear()
+        {
+            txtCategory.Clear();
+            txtCity.Clear();
+            txtDesc.Clear();
+            txtOriginal.Clear();
+            txtPerLB.Clear();
+            txtSale.Clear();
+            txtSavings.Clear();
+            txtState.Clear();
+            txtSubtotal.Clear();
+            txtTax.Clear();
+            txtTotal.Clear();
+            txtTotalAmount.Clear();
+            txtTotalLB.Clear();
+
+            dgvGrocery.ClearSelection();
+        }
+
+        private void txtTotal_Enter(object sender, EventArgs e)
+        {
+            double sub;
+            double sav;
+            double tax;
+
+            double.TryParse(txtSubtotal.Text, out sub);
+            double.TryParse(txtSavings.Text, out sav);
+            double.TryParse(txtTax.Text, out tax);
+
+            txtTotal.Text = Convert.ToString((sub - sav) + tax);
         }
     }
 }
