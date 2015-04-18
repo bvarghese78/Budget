@@ -219,7 +219,7 @@
             this.dgvGrocery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGrocery.Location = new System.Drawing.Point(6, 99);
             this.dgvGrocery.Name = "dgvGrocery";
-            this.dgvGrocery.Size = new System.Drawing.Size(900, 184);
+            this.dgvGrocery.Size = new System.Drawing.Size(900, 189);
             this.dgvGrocery.TabIndex = 25;
             // 
             // btnInsert

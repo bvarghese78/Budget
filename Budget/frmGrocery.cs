@@ -275,6 +275,14 @@ namespace Budget
 
                 btnInsert.Enabled = false;
                 btnData.Text = "Add New Item";
+
+                // Calculate Subtotal
+                double calcSubTotal = 0;
+                foreach (var item in newGroceryList)
+                {
+                    calcSubTotal += item.TotalAmount;
+                }
+                txtSubtotal.Text = Convert.ToString(calcSubTotal);
             }
             else if (btnData.Text == "Add New Item")
             {
